@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import MeaningCloud from 'meaning-cloud'
-import { Api_Key, port, Service } from "../server.env";
+import { Api_Key, port, Service } from "../env";
 const app: Express = express();
 
 const meaningCloud = new MeaningCloud({
