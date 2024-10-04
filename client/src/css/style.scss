@@ -1,9 +1,89 @@
+$border_radius: 5px;
+$shadow: 0 0 5px 0;
 body {
     padding: 0;
     margin: 0;
-    background-color: green;
+    height: 100vh;
 }
 
-p {
-    font-size: 5em;
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        gap: 10px;
+    }
+    #user-input {
+        padding: 10px 5px;
+        font-size: 20px;
+        width: 30%;
+        border: 0;
+        border-radius: $border_radius;
+        box-shadow: 0 0 5px 0;
+        outline: none;
+    }
+    #submit {
+        padding: 15px 10px;
+        border: 0;
+        border-radius: $border_radius;
+        box-shadow: $shadow;
+        cursor: pointer;
+    }
+    #result {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 70%;
+        padding: 20px;
+        border-radius: $border_radius;
+        box-shadow: $shadow;
+        #result-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            width: 90%;
+            #status-cont {
+                border-radius: $border_radius;
+                box-shadow: $shadow;
+                padding: 0 5px;
+                text-align: center;
+                width: fit-content;
+                align-self: center;
+                color: #fff;
+            }
+            .result-row {
+                display: flex;
+                flex-direction: column;
+                border-radius: $border_radius;
+                box-shadow: $shadow;
+                padding: 5px 10px;
+                gap: 5px;
+            }
+            .result-key {
+                display: inline-block;
+                width: 20%;
+            }
+        }
+    }
+    .error {
+        color: red;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    #result {
+        width: 100%;
+    }
+    #result-list {
+        width: 100%;
+        gap: 0;
+    }
 }

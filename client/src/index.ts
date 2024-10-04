@@ -1,10 +1,8 @@
-import './css/style.scss'
-const p = document.createElement('h1')
+import "./css/style.scss";
+import handleFormSubmission from "./ts/formSubmition";
 
-p.textContent = 'Hello'
+if (prod_flag as boolean | undefined) {
+    import("./ts/serviceWorker");
+}
 
-p.style.fontSize = '5em'
-
-document.body.appendChild(p)
-
-document.body.style.fontSize = '10px' 
+handleFormSubmission();

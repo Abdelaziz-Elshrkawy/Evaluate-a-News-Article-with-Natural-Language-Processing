@@ -1,26 +1,30 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "server": "nodemon ./src/server/index.ts"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/node": "^22.7.4",
-    "dotenv": "^16.4.5",
-    "nodemon": "^3.1.7",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.6.2"
-  },
-  "dependencies": {
-    "@types/cors": "^2.8.17",
-    "@types/express": "^5.0.0",
-    "cors": "^2.8.5",
-    "express": "^4.21.0",
-    "meaning-cloud": "^1.1.10"
-  }
+    "name": "server",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "server": "nodemon ./src/index.ts",
+        "build": "npm run tsc",
+        "tsc": "tsc",
+        "start": "node ./dist/src/index.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "description": "",
+    "devDependencies": {
+        "@types/node": "^22.7.4",
+        "dotenv": "^16.4.5",
+        "nodemon": "^3.1.7",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.2"
+    },
+    "dependencies": {
+        "@types/cors": "^2.8.17",
+        "@types/express": "^5.0.0",
+        "axios": "^1.7.7",
+        "cors": "^2.8.5",
+        "express": "^4.21.0",
+        "meaning-cloud": "^1.1.10"
+    }
 }

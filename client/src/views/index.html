@@ -6,10 +6,24 @@
         <title>Evaluate a News Article with Natural Language Processing</title>
     </head>
     <body>
-        <script>
-            if('serviceWorker' in navigator){
-                window.addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'))
-            }
-        </script>
+        <div id="container">
+            <h2>Evaluate a News Article with Natural Language Processing</h2>
+            <form action="#">
+                <input
+                    type="text"
+                    required
+                    name="user-input"
+                    id="user-input"
+                    title="Insert a valid url"
+                />
+                <input type="submit" name="submit" id="submit" />
+            </form>
+            <div id="result">
+                <h3 id="instruction">
+                    Insert valid url in the above input field to analyze the
+                    text form fetched page
+                </h3>
+            </div>
+        </div>
     </body>
 </html>

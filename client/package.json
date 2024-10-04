@@ -5,16 +5,16 @@
     "main": "index.js",
     "scripts": {
         "dev": "webpack-dev-server --config ./webpack.dev.ts",
-        "build": "webpack --config ./webpack.prod.ts"
+        "build": "webpack --config ./webpack.prod.ts",
+        "test": "jest --config ./jest.config.ts"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "dependencies": {
-    },
     "devDependencies": {
         "@babel/core": "^7.25.2",
         "@babel/preset-env": "^7.25.4",
+        "@types/jest": "^29.5.13",
         "@types/node": "^22.5.5",
         "@types/webpack": "^5.28.5",
         "@types/webpack-dev-server": "^4.7.2",
@@ -32,6 +32,7 @@
         "sass-loader": "^16.0.2",
         "style-loader": "^4.0.0",
         "terser-webpack-plugin": "^5.3.10",
+        "ts-jest": "^29.2.5",
         "ts-loader": "^9.5.1",
         "ts-node": "^10.9.2",
         "typescript": "^5.6.2",
