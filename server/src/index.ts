@@ -1,6 +1,6 @@
 import express, { Express, Request, Response } from "express";
 import axios from "axios";
-import { Api_Key, port } from "../env";
+import { Api_Key, port } from "./env";
 import cors from "cors";
 import { join } from "path";
 const app: Express = express();
